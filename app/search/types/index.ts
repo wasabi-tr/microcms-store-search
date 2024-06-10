@@ -5,13 +5,11 @@ export type Prefectures = {
   code: number
   lat: number
   lng: number
-} & MicroCMSContentId &
-  MicroCMSDate
+}
 
 export type Categories = {
   title: string
-} & MicroCMSContentId &
-  MicroCMSDate
+} & MicroCMSContentId
 
 export type Stores = {
   name: string
@@ -21,8 +19,7 @@ export type Stores = {
   lat: number
   lng: number
   categories: Categories[]
-} & MicroCMSContentId &
-  MicroCMSDate
+}
 
 export type Queries = {
   q?: string
